@@ -1,0 +1,247 @@
+@media (max-width: 1199px)
+    .header
+        &__nav-elements
+            margin-right: 20px
+
+    .main-page
+        &__title
+            font-size: 86px
+        &__text
+            font-size: 22px
+            line-height: 30px
+
+    .menu
+        img
+            width: 72px
+            height: 72px
+
+@media (max-width: 991px)
+    .header
+        .container-fluid
+            position: relative
+        &__logo
+            font-size: 16px
+            z-index: 1
+        &__nav-bar
+            transition: 0.8s all
+            z-index: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            position: fixed
+            height: 120vh
+            width: 100%
+            background: rgba(17,17,17,.95)
+            top: 0
+            right: -100%
+            .header__nav-list
+                flex-direction: column
+                top: 0
+                left: 0
+        &__hamburger
+            display: block
+            z-index: 1
+        &__nav-bar_active
+            top: 0
+            right: 0
+        &__nav-elements
+            margin-bottom: 48px
+            &:last-child
+                margin-bottom: 0
+    
+    .main-page
+        &__title
+            font-size: 40px
+        &__text
+            font-size: 24px
+            line-height: 48px
+            width: 686px
+
+    .product-features
+        background: url("../img/product_features_bg.jpg") 20% center/cover no-repeat
+        &__item-wrapp
+            &:nth-child(2n + 1)
+                flex-direction: row-reverse
+                margin-bottom: 48px
+                .product-features__item-info
+                    margin-right: 0
+                    margin-left: 16px
+                .product-features__item-title
+                    text-align: left
+                .product-features__item-text
+                    text-align: left
+
+    .menu
+        &__product-card:nth-child(2n + 1)
+            margin-bottom: 24px
+
+    .testimonials
+        min-height: 404px
+        padding: 48px 0 48px 0
+        &__slider-inner
+            img
+                height: 404px
+        &__text
+            width: 686px
+
+    .locations
+        &__card-wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__card-item
+            margin-bottom: 48px
+            &:last-child
+                margin-bottom: 0
+    
+    .footer
+        &__nav-bar
+            display: none
+
+@media (max-width: 767px)
+    .hamburger_active
+        right: 50px
+
+    .main-page
+        &__text
+            width: 495px
+
+    .product-features
+        background: url("../img/product_features_bg.jpg") 25% center/cover no-repeat
+
+    .testimonials
+        min-height: 354px
+        padding: 48px 0 48px 0
+        &__slider-inner
+            img
+                height: 354px
+                width: 150%
+        &__text
+            width: 495px
+
+    .newsletter
+        &__submit-btn
+            width: 173px
+
+@media (max-width: 575px)
+    .hamburger_active
+        right: 10px
+        
+    .button
+        width: 150px
+        &__content
+            width: 150px
+
+    .header
+        .container-fluid
+            padding-left: 10px
+            padding-right: 10px
+        &__logo
+            font-size: 10px
+
+    .main-page
+        &__title
+            font-size: 25px
+            line-height: 40px
+        &__text
+            width: 90%
+            font-size: 14px
+            line-height: 24px
+    
+    .product-features
+        &__item-wrapp
+            &:nth-child(2n), &:nth-child(2n + 1)
+                flex-direction: column-reverse
+                .product-features__item-title
+                    text-align: center
+                .product-features__item-text
+                    text-align: center
+        &__item-icon
+            display: block
+            width: 100px
+            margin: 0 auto
+            margin-bottom: 24px
+
+    .fresh-coffee
+        &__title
+            font-size: 25px
+            line-height: 40px
+        &__text
+            font-size: 14px
+            line-height: 24px
+
+    .menu
+        &__title
+            font-size: 25px
+            line-height: 40px
+        &__text
+            width: 80%
+            font-size: 14px
+            line-height: 24px
+        &__product-card
+            display: flex
+            flex-direction: column
+        &__product-wrapper
+            display: flex
+            flex-direction: column
+        &__product-img
+            display: block
+            margin: 0 auto
+            margin-bottom: 12px
+        &__product-info
+            margin-bottom: 12px
+            text-align: center
+        &__product-price
+            margin: 0 auto
+    
+    .testimonials
+        min-height: 300px
+        img
+            height: 300px
+        &__title
+            font-size: 25px
+            line-height: 40px
+        &__text
+            display: none
+
+    .locations
+        &__title
+            font-size: 25px
+            line-height: 40px
+        &__text
+            width: 80%
+            font-size: 14px
+            line-height: 24px
+        &__card-item
+            width: 80%
+        &__card-title
+            font-size: 20px
+            line-height: 30px
+        &__card-img
+            width: 150px
+            margin: 0 auto
+            margin-bottom: 24px
+
+    .newsletter
+        &__title
+            font-size: 25px
+            line-height: 40px
+        &__text
+            width: 80%
+            font-size: 14px
+            line-height: 24px
+        &__field
+            margin-right: 0
+            width: 150px
+            margin-bottom: 24px
+        &__submit-btn
+            margin-right: 0
+            width: 150px
+
+    .footer
+        display: flex
+        align-items: center
+        &__container
+            justify-content: center
+        &__copyright
+            display: none

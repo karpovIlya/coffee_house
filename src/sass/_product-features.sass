@@ -1,0 +1,36 @@
+.product-features
+    min-height: 600px
+    background: url("../img/product_features_bg.jpg") center center/cover no-repeat
+    padding: 144px 0 144px 0
+    &__item-info
+        margin-right: 16px
+    &__item-title
+        font-family: 'Inter'
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        text-align: right
+        text-transform: uppercase
+        color: #000000
+    &__item-text
+        font-family: 'Inter'
+        font-weight: 400
+        font-size: 12px
+        line-height: 24px
+        text-align: right
+        color: #000000
+    &__item-wrapp
+        display: flex
+        &:nth-child(2n)
+            flex-direction: row-reverse
+            .product-features__item-info
+                margin-right: 0
+                margin-left: 16px
+            .product-features__item-title
+                text-align: left
+            .product-features__item-text
+                text-align: left
+    &__row
+        margin-bottom: 48px
+        &:last-child
+            margin-bottom: 0

@@ -1,0 +1,47 @@
+.testimonials
+    min-height: 504px
+    padding: 96px 0 96px 0
+    position: relative
+    &__slider
+        position: absolute
+        top: 0
+        left: 0
+    &__slider-inner
+        z-index: -1
+        img
+            height: 504px
+    &__slider-indicators [data-bs-target]
+        z-index: 1
+        width: 11px
+        height: 11px
+        background: none
+        border-radius: 100%
+        border: 1px solid #FFFFFF
+        margin-right: 10px
+        &:last-child
+            margin-right: 0
+    &__slider-indicators [data-bs-target].active
+        background-color: #FFFFFF
+    &__title
+        font-family: 'Inter'
+        font-weight: 700
+        font-size: 40px
+        line-height: 48px
+        text-align: center
+        color: #FFF
+        margin-bottom: 24px
+    &__line
+        width: 189px
+        height: 0px
+        border: 1px solid #FFFFFF
+        margin: 0 auto
+        margin-bottom: 24px
+    &__text
+        width: 735px
+        margin: 0 auto
+        font-family: 'Inter'
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        text-align: center
+        color: #FFFFFF

@@ -1,0 +1,22 @@
+.hamburger
+    display: none
+    span
+        transition: 0.5s all
+        display: block
+        margin-bottom: 5px
+        width: 19px
+        height: 1px
+        background: #FFFFFF
+        border-radius: 1px
+        &:last-child
+            margin-bottom: 0
+    &_active
+        position: fixed
+        top: 48px
+        span:nth-child(1)
+            transform: translateX(3px) translateY(-3px) rotate(-45deg)
+        span:nth-child(2)
+            display: none
+        span:nth-child(3)
+            transform: translateX(3px) translateY(-9px) rotate(45deg)
+
